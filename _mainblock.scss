@@ -1,0 +1,78 @@
+@mixin mainblock(){
+    display: flex;
+    justify-content:space-around;
+    padding: 30px;
+    text-align: center;
+    line-height: 25px;
+    flex-wrap: wrap;
+    row-gap: 20px
+
+}
+@mixin ch(){
+    border: 1px solid;
+    padding: 20px;
+    width: 450px;
+    box-shadow: 1px 1px 5px 1px black;
+    border-radius: 10px;
+    
+
+}
+.mainblock{
+   @include mainblock();
+
+    .ch1{
+        @include ch();
+    }
+    .ch2{
+        @include ch();
+    }   
+}
+.mainblock2{
+    @include mainblock();
+    .ch3{
+        @include ch();
+    }
+    .ch4{
+        @include ch();
+    }
+}
+
+.lastdiv{
+    text-align: center;
+    align-items: center;
+    padding: 50px;
+
+    h3{
+        font-size: 40px;
+        text-decoration: underline;
+        line-height: 40px;
+    }
+
+    .ug{
+        display: flex;
+        justify-content: space-around;
+        padding: 50px;
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+    .paris{
+        border: 1px solid;
+    }
+    .davenports{
+        border: 1px solid;
+    }
+
+    button{
+        background-color: red;
+        padding: 5px;
+        color: white;
+        border: none;
+    }
+    button:hover{
+        background-color:chocolate;
+        padding: 7px;
+        color: black;
+        border-radius: 10px;
+
+    }
+}
